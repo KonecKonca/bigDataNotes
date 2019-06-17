@@ -1,0 +1,25 @@
+
+maria_dev maria_dev
+root 123g
+admin root
+
+cloudera cloudera
+kafka 123g
+
+
+
+docker rm 45454535       (удаление контейнера)
+docker rmi serviceName   (это удалить имадж, нужно после удаления контейнера)
+
+docker exec -it 354g5g /bin/bash
+
+
+Вопросы:
+[#1] intro
+- кафку ставить нужно только на клоудере(на хортоне она стоит по дефолту)
+
+[#4] devops
+- в таске нужно ли как-то сохранять изменения в докер-контейнере, помимо создания нового image через коммит
+- dockerfile ?? вообще не нужно было 
+
+http://localhost:9995  -- zippelin

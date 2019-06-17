@@ -1,0 +1,24 @@
+
+
+	topic creation
+./kafka-topics.sh --create --zookeeper sandbox-hdp.hortonworks.com:2181 --replication-factor 1 --partitions 1 --topic topicName
+Created topic "topicName"
+
+./kafka-topics.sh --list --zookeeper sandbox-hdp.hortonworks.com:2181 
+
+	producer
+./kafka-console-producer.sh --broker-list sandbox-hdp.hortonworks.com:6667 --topic topicName
+
+	consumer
+./kafka-console-consumer.sh --bootstrap-server sandbox-hdp.hortonworks.com:6667 --topic topicName --from-beginning
+
+
+
+
+quickstart.cloudera   10.0.2.15
+/kafka
+/topic1
+http://localhost:7180
+
+	zippelin
+http://localhost:9995/#/

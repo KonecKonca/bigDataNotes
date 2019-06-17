@@ -1,0 +1,2 @@
+ Invalid transition for servicecomponenthost, clusterName=Sandbox, clusterId=2, 
+ serviceName=ELASTICSEARCH, componentName=MASTER, hostname=sandbox-hdp.hortonworks.com, currentState=INSTALL_FAILED, newDesiredState=STARTED

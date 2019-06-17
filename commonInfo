@@ -1,0 +1,38 @@
+NOT under docker -> 2122 root/hadoop
+docker ps --format '{{.Names}}'
+
+docker pull elasticsearch:6.5.0
+docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearch elasticsearch
+
+	// elastic
+docker run -d -p 5601:5601 ff171d17e
+	// kibana
+docker run -d -p 5601:5601 3c8a8603d365 --link bfd0a8a5d929:bfd0a8a5d929
+
+
+	// last попытка
+docker pull nshou/elasticsearch-kibana
+docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana
+
+	// elasticKafkaReader running
+spark-submit --class by.epam.kafkareader.Main --master yarn --driver-memory 512m --num-executors 1 --executor-memory 512m --executor-cores 1 --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.0, \org.elasticsearch.elasticsearch-hadoop:6.6.0 spark-kafka-reader_2.11-0.1.jar sparkTopic /tmp/kafka-spark-elasticsearch
+
+	// elasticKafkaReader running [LATEST]
+spark-submit --class by.epam.kafkareader.Main --master yarn --driver-memory 512m --num-executors 1 --executor-memory 512m --executor-cores 1 --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.1,\org.elasticsearch:elasticsearch-spark-20_2.11:6.6.0  spark-kafka-reader_2.11-0.1.jar sparkTopic /user/maria_dev/elastic_2
+
+
+.es(*)
+.es(index='events*', timefield='date_time')
+
+	// sparkJob
+http://localhost:8088/proxy/application_1557669326627_0007/
+
+
+POST /labels/default/
+{
+  "name": "5551",
+  "inst":{
+    "fe": "efrfref",
+    "gfer": "eferfrre"
+  }
+}

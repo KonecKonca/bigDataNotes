@@ -1,0 +1,98 @@
+	 _______________
+	|				|
+	|     TASK1	    |
+	|_______________|
+date_time                      		2014-08-11 07:46:59
+site_name 							2
+posa_continent 						3
+user_location_country 				66
+user_location_region 				348
+user_location_city 					48862
+orig_destination_distance 			2234.2641
+user_id 							12
+is_mobile 							0
+is_package 							1
+channel 							9
+srch_ci 							2014-08-27
+srch_co 							2014-08-31
+	---------------------------------------------------	
+		srch_adults_cnt 					2
+	---------------------------------------------------	
+srch_children_cnt 					0
+srch_rm_cnt 						1
+srch_destination_id 				8250
+srch_destination_type_id 			1
+is_booking 							0
+cnt									3 
+	---------------------------------------------------	
+		hotel_continent 					2
+		hotel_country 						50
+		hotel_market						628
+	---------------------------------------------------
+hotel_cluster						1
+
+
+
+
+	 _______________
+	|				|
+	|     TASK2	    |
+	|_______________|
+date_time                      		2014-08-11 07:46:59
+site_name 							2
+posa_continent 						3
+	user_location_country 				66
+user_location_region 				348
+user_location_city 					48862
+orig_destination_distance 			2234.2641
+user_id 							12
+is_mobile 							0
+is_package 							1
+channel 							9
+srch_ci 							2014-08-27
+srch_co 							2014-08-31
+srch_adults_cnt 					2
+srch_children_cnt 					0
+srch_rm_cnt 						1
+srch_destination_id 				8250
+srch_destination_type_id 			1
+	is_booking 							0
+cnt									3 
+hotel_continent 					2
+	hotel_country 						50
+hotel_market						628
+hotel_cluster						1
+
+
+
+
+	 _______________
+	|				|
+	|     TASK3	    |
+	|_______________|
+date_time                      		2014-08-11 07:46:59
+site_name 							2
+posa_continent 						3
+user_location_country 				66
+user_location_region 				348
+user_location_city 					48862
+orig_destination_distance 			2234.2641
+user_id 							12
+is_mobile 							0
+is_package 							1
+channel 							9
+srch_ci 							2014-08-27
+srch_co 							2014-08-31
+	srch_adults_cnt 					2
+	srch_children_cnt 					0
+srch_rm_cnt 						1
+srch_destination_id 				8250
+srch_destination_type_id 			1
+	is_booking 							0
+cnt									3 
+	hotel_continent 					2
+	hotel_country 						50
+	hotel_market						628
+hotel_cluster						1
+
+

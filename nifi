@@ -1,0 +1,8 @@
+	# Nifi
+
+sudo docker run -d -p 8080:8080 nifi
+
+http://192.168.99.100:32770/nifi/  (порты из кинематика нужно было форвардить)
+
+curl -d "hello world" -X POST http://localhost:4040/data
+

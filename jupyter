@@ -1,0 +1,6 @@
+	jupyter/dlab
+
+ports(when run with docker):
+	8888:8888	
+
+docker cp test.csv nifty_gagarin:/home/jovyan

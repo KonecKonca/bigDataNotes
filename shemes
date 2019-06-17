@@ -1,0 +1,68 @@
+	TRAIN
+ |-- date_time: string (nullable = true)
+ |-- site_name: string (nullable = true)
+ |-- posa_continent: string (nullable = true)
+ |-- user_location_country: string (nullable = true)
+ |-- user_location_region: string (nullable = true)
+ |-- user_location_city: string (nullable = true)
+ |-- orig_destination_distance: string (nullable = true)
+ |-- user_id: string (nullable = true)
+ |-- is_mobile: string (nullable = true)
+ |-- is_package: string (nullable = true)
+ |-- channel: string (nullable = true)
+ |-- srch_ci: string (nullable = true)
+ |-- srch_co: string (nullable = true)
+ |-- srch_adults_cnt: string (nullable = true)
+ |-- srch_children_cnt: string (nullable = true)
+ |-- srch_rm_cnt: string (nullable = true)
+ |-- srch_destination_id: string (nullable = true)
+ |-- srch_destination_type_id: string (nullable = true)
+ |-- is_booking: string (nullable = true)
+ |-- cnt: string (nullable = true)
+ |-- hotel_continent: string (nullable = true)
+ |-- hotel_country: string (nullable = true)
+ |-- hotel_market: string (nullable = true)
+ |-- hotel_cluster: string (nullable = true)
+ 
+ 
+	
+	TEST
+ |-- id: string (nullable = true)
+ |-- date_time: string (nullable = true)
+ |-- site_name: string (nullable = true)
+ |-- posa_continent: string (nullable = true)
+ |-- user_location_country: string (nullable = true)
+ |-- user_location_region: string (nullable = true)
+ |-- user_location_city: string (nullable = true)
+ |-- orig_destination_distance: string (nullable = true)
+ |-- user_id: string (nullable = true)
+ |-- is_mobile: string (nullable = true)
+ |-- is_package: string (nullable = true)
+ |-- channel: string (nullable = true)
+ |-- srch_ci: string (nullable = true)
+ |-- srch_co: string (nullable = true)
+ |-- srch_adults_cnt: string (nullable = true)
+ |-- srch_children_cnt: string (nullable = true)
+ |-- srch_rm_cnt: string (nullable = true)
+ |-- srch_destination_id: string (nullable = true)
+ |-- srch_destination_type_id: string (nullable = true)
+ |-- hotel_continent: string (nullable = true)
+ |-- hotel_country: string (nullable = true)
+ |-- hotel_market: string (nullable = true)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,21 @@
+IT IS NECESSARY ==> clean co,pile assembly:single
+
+hadoop jar jarName.jar com.koxitski.MainClassName /from.txt /where 
+
+hadoop fs -cat /where/* 
+
+import org.apache.spark.sql.types._
+var df = StructType(Array(StructField("timestamp", StringType, true),StructField("site", StringType, true),StructField("requests", LongType, true) ))
+df = spark.read
+          .schema(df)
+          .option("header", "true")
+          .option("delimiter", "\t")
+          .csv("/user/hduser/wikipedia/pageviews-by-second-tsv")
+df.write.parquet("/user/hduser/wikipedia/pageviews-by-second-parquet")
+
+
+	read file form hdfs
+hadoop jar c.jar /user/maria_dev/test/text.txt	
+
+	// copy to hdfs drom local
+hdfs dfs -put fileName.csv /user/maria_dev/data
