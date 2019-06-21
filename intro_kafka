@@ -1,4 +1,7 @@
 
+cd ..
+cd ..
+cd usr/hdp/current/kafka-broker/bin
 
 	topic creation
 ./kafka-topics.sh --create --zookeeper sandbox-hdp.hortonworks.com:2181 --replication-factor 1 --partitions 1 --topic topicName
@@ -10,8 +13,7 @@ Created topic "topicName"
 ./kafka-console-producer.sh --broker-list sandbox-hdp.hortonworks.com:6667 --topic topicName
 
 	consumer
-./kafka-console-consumer.sh --bootstrap-server sandbox-hdp.hortonworks.com:6667 --topic topicName --from-beginning
-
+./kafka-console-consumer.sh --bootstrap-server sandbox-hdp.hortonworks.com:6667 --topic twitter --from-beginning
 
 
 

@@ -1,0 +1,5 @@
+	# Workflow
+	
+yum info oozie*	
+	
+http://localhost:11000/oozie/?user.name=maria_dev

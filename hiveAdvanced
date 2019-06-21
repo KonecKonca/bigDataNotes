@@ -1,0 +1,14 @@
+
+	// copy to hdfs drom local
+hdfs dfs -put fileName.csv /user/maria_dev/data
+	
+	// disable safemode
+sudo -u hdfs hdfs dfsadmin -safemode leave
+
+	// remove file
+hdfs dfs -rm -R /path/to/HDFS/file
+
+
+
+	// SKIPPED
+bid.20130609.txt  [9-12]
