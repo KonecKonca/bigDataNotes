@@ -1,5 +1,111 @@
-	# Workflow
+
+	## Jenkins
+http://192.168.99.100:32769/
+
+NOT under docker -> 2122 root/hadoop
+docker ps --format '{{.Names}}'
+
+	// mack direcroy
+cd /var/lib/ambari-server/resources/mpacks
+
+	# Airflow
+docker pull puckel/docker-airflow
+
+
+ssh -p 3022 root@localhost
+
+
+	## Cloudera
+musql -u roo -p
+
+###########################
+ifdown eth0
+ifup eth0
+yum update
+
+root ghu475...
+
+wget https://archive.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+tar –xvf zookeeper-3.4.6.tar.gz
+wget https://archive.apache.org/dist/hadoop/core/hadoop-2.6.0/hadoop-2.6.0.tar.gz
+tar –xvf hadoop-2.6.0.tar.gz
+
+	# .bashrc
+vi ~/.bashrc	
 	
-yum info oozie*	
-	
-http://localhost:11000/oozie/?user.name=maria_dev
+export HADOOP_HOME=/root/hadoop-2.6.0
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export JAVA_HOME=/root/jdk1.8.0_131
+export ZOOKEEPER_HOME=/root/zookeeper-3.4.6
+export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$ZOOKEEPER_HOME/bin
+
+ssh-keygen -t rsa
+sudo chmod 700 .ssh/
+cd .ssh/
+chmod 600 *
+cd ..
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ssh-copy-id -i id_rsa.pub root@localhost
+sudo service sshd restart
+
+wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz
+tar -xvf jdk-8u131-linux-x64.tar.gz
+cd ~ 
+source .bashrc
+
+cd sbin
+./start-all.sh
+
+/root/jdk1.8.0_131
+/root/
+
+
+## NameNode
+nameNode
+
+## StandByNameNode
+standBy
+
+## DataNode
+dataNodeR
+
+
+##################
+docker-compose up -d 
+CMD+R
+
+##################
+	Вроде были неплохие имаджи(с памятью пообовать поиграть)
+/docker-entrypoint.sh: line 15: echo: write error: No space left on device
+
+##################
+hostname
+jps
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+su
+hdfs haadmin -getServiceState active
+hdfs haadmin -transitionToActive active --forceactive --forcemanual
+
+su
+hdfs haadmin -transitionToActive active --forceactive --forcemanual
+
+
+
+
+
+
+
+
+
+
+
+
+

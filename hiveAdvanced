@@ -12,3 +12,15 @@ hdfs dfs -rm -R /path/to/HDFS/file
 
 	// SKIPPED
 bid.20130609.txt  [9-12]
+
+parse_ua
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 SE 2.X MetaSr 1.0,gzip(gfe)
+
+hadoop fs -chmod 777 /user/maria_dev/hive_advanced/bidding/bid.20130311.txt
+hadoop fs -copyFromLocal here /user/maria_dev/hive_advanced/script
+
+	## Working process
+hive -f filename.hql
+
+ADD JAR hdfs:///user/maria_dev/hive_advanced/script/hive_udf.jar;
+CREATE TEMPORARY FUNCTION parse_ua AS 'by.epam.hiveudf.UserAgentUDTF';

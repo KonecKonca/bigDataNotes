@@ -4,16 +4,16 @@ cd ..
 cd usr/hdp/current/kafka-broker/bin
 
 	topic creation
-./kafka-topics.sh --create --zookeeper sandbox-hdp.hortonworks.com:2181 --replication-factor 1 --partitions 1 --topic topicName
+./kafka-topics.sh --create --zookeeper sandbox-hdp.hortonworks.com:2181 --replication-factor 1 --partitions 1 --topic twitter_analyse_1
 Created topic "topicName"
 
 ./kafka-topics.sh --list --zookeeper sandbox-hdp.hortonworks.com:2181 
 
 	producer
-./kafka-console-producer.sh --broker-list sandbox-hdp.hortonworks.com:6667 --topic topicName
+./kafka-console-producer.sh --broker-list sandbox-hdp.hortonworks.com:6667 --topic test_topic_1
 
 	consumer
-./kafka-console-consumer.sh --bootstrap-server sandbox-hdp.hortonworks.com:6667 --topic twitter --from-beginning
+./kafka-console-consumer.sh --bootstrap-server sandbox-hdp.hortonworks.com:6667 --topic twitter_analyse_1 --from-beginning
 
 
 

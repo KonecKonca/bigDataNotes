@@ -1,4 +1,4 @@
-IT IS NECESSARY ==> clean co,pile assembly:single
+IT IS NECESSARY ==> clean compile assembly:single
 
 hadoop jar jarName.jar com.koxitski.MainClassName /from.txt /where 
 
